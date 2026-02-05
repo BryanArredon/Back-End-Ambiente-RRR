@@ -1,0 +1,36 @@
+# Entorno virtual
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Variables de entorno
+.env
+
+# Logs
+*.log
+
+# Configuración de VS Code / IDEs
+.vscode/
+.idea/
+
+# Build / distribuciones
+build/
+dist/
+*.egg-info/
+
+# Base de datos local (si usas sqlite)
+*.db
+*.sqlite3
+
+# Flask
+instance/
+.webassets-cache
