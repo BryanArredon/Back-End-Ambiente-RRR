@@ -1,0 +1,41 @@
+:root {
+  --green-dark: #0b3d2e;
+  --green: #0f6b4f;
+  --green-light: #e0f7f0;
+}
+
+body {
+  background-color: #f6f9f8;
+  color: #1b1b1b;
+}
+
+.hero-gradient {
+  background: linear-gradient(120deg, #0b3d2e 0%, #0f6b4f 45%, #1ab07d 100%);
+}
+
+.hero-illustration {
+  max-height: 240px;
+}
+
+.info-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid #e6efe9;
+  box-shadow: 0 8px 24px rgba(14, 83, 61, 0.08);
+}
+
+.timeline li {
+  border-left: 3px solid var(--green);
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="row g-4 align-items-center">
+  <div class="col-lg-6">
+    <h2 class="fw-bold">Preservar el entorno para futuras generaciones</h2>
+    <p>Las decisiones de hoy determinan la disponibilidad de agua, alimentos y bienestar para los próximos años. Cuidar el planeta es un acto de responsabilidad social.</p>
+    <ul class="timeline list-unstyled">
+      <li>
+        <span class="badge bg-success">Ahora</span>
+        <p class="mt-2 mb-4">Reducir emisiones, ahorrar energía y proteger áreas verdes.</p>
+      </li>
+      <li>
+        <span class="badge bg-success">Próximos 10 años</span>
+        <p class="mt-2 mb-4">Restaurar ecosistemas y transitar a economías circulares.</p>
+      </li>
+      <li>
+        <span class="badge bg-success">Futuro</span>
+        <p class="mt-2">Garantizar un planeta resiliente y justo para todas las comunidades.</p>
+      </li>
+    </ul>
+  </div>
+  <div class="col-lg-6 text-center">
+    <img src="{{ url_for('static', filename='images/images (1).jpeg') }}" class="img-fluid rounded" alt="Futuras generaciones" />
+  </div>
+</section>
+{% endblock %}

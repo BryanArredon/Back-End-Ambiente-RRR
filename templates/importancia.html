@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="row g-4 align-items-center">
+  <div class="col-lg-6">
+    <h2 class="fw-bold">Importancia del cuidado del medio ambiente</h2>
+    <p>El medio ambiente es la base de nuestra supervivencia. Cada ecosistema aporta servicios esenciales como regulación del clima, provisión de alimentos y equilibrio natural.</p>
+    <div class="d-grid gap-3">
+      <div class="info-card">
+        <h3 class="h6 fw-bold">Salud y bienestar</h3>
+        <p>Un entorno limpio reduce enfermedades y mejora la calidad de vida.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="h6 fw-bold">Economía sostenible</h3>
+        <p>La gestión responsable de recursos impulsa empleos verdes y productividad.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="h6 fw-bold">Biodiversidad</h3>
+        <p>Conservar especies protege cadenas alimenticias y resiliencia ambiental.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 text-center">
+    <img src="{{ url_for('static', filename='images/Que-es-el-medio-ambiente-1.jpg') }}" class="img-fluid rounded" alt="Naturaleza saludable" />
+  </div>
+</section>
+{% endblock %}

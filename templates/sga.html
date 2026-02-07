@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="row g-4 align-items-center">
+  <div class="col-lg-6">
+    <h2 class="fw-bold">¿Qué es un Sistema de Gestión Ambiental?</h2>
+    <p>Un SGA es un conjunto de políticas, procesos y prácticas que permiten a una organización controlar su impacto ambiental y mejorar continuamente.</p>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="info-card h-100">
+          <h3 class="h6 fw-bold">Planificación</h3>
+          <p>Diagnóstico de impactos, definición de objetivos y metas medibles.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-card h-100">
+          <h3 class="h6 fw-bold">Implementación</h3>
+          <p>Capacitación, recursos y procedimientos para reducir riesgos.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-card h-100">
+          <h3 class="h6 fw-bold">Verificación</h3>
+          <p>Monitoreo, auditorías y medición de resultados.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-card h-100">
+          <h3 class="h6 fw-bold">Mejora continua</h3>
+          <p>Acciones correctivas y revisión de estrategias.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 text-center">
+    <img src="{{ url_for('static', filename='images/como_cuidar_el_medio_ambiente_3789_600.jpg') }}" class="img-fluid rounded" alt="Gestión ambiental" />
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="row g-4">
+  <div class="col-lg-6">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h2 class="h4 fw-bold">Importancia del cuidado del medio ambiente</h2>
+        <p>El medio ambiente sostiene nuestra salud, economía y calidad de vida. Protegerlo reduce riesgos climáticos y garantiza agua, aire limpio y biodiversidad.</p>
+        <a class="btn btn-success" href="{{ url_for('importancia') }}">Explorar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h2 class="h4 fw-bold">Sistema de Gestión Ambiental</h2>
+        <p>Un SGA ayuda a organizaciones y comunidades a medir impactos, establecer metas y mejorar procesos para operar de manera sostenible.</p>
+        <a class="btn btn-success" href="{{ url_for('sga') }}">Explorar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h2 class="h4 fw-bold">Futuras generaciones</h2>
+        <p>Preservar hoy es asegurar oportunidades mañana. Las decisiones actuales impactan directamente en el bienestar y seguridad de quienes vienen después.</p>
+        <a class="btn btn-success" href="{{ url_for('futuro') }}">Explorar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h2 class="h4 fw-bold">Las 3 R: Reducir, Reutilizar, Reciclar</h2>
+        <p>Pequeñas acciones diarias disminuyen residuos, optimizan recursos y fomentan una cultura responsable con el planeta.</p>
+        <a class="btn btn-success" href="{{ url_for('tres_r') }}">Explorar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-5">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-5">
+      <img src="{{ url_for('static', filename='images/imagen-que-es-el-medio-ambiente.webp') }}" class="img-fluid rounded" alt="Resumen ambiental" />
+    </div>
+    <div class="col-lg-7">
+      <h3 class="fw-bold">¿Por qué esta app?</h3>
+      <p>Esta plataforma organiza información clara y accesible, con un enfoque educativo y visual, para impulsar hábitos responsables y crear conciencia ambiental.</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Contenido estructurado con migas de pan.</li>
+        <li class="list-group-item">Diseño responsivo y accesible.</li>
+        <li class="list-group-item">Mensajes accionables y motivadores.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}
